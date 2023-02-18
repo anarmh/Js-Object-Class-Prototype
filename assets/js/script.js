@@ -159,3 +159,38 @@
 // }
 // test.eating()
 
+// let numbers=[1,2,3,4,5];
+// let names=["Tunar","Elnar"];
+
+
+
+// Array.prototype.sumOfNumbers=function(){
+//     let sum =0;
+//     for (let i = 0; i < this.length; i++) {
+//        sum+=this[i];
+        
+//     }
+//     return sum;
+// }
+// console.log(numbers.sumOfNumbers());
+
+Array.prototype.getBiggestNumber=function(){
+    console.log(Math.max(...this));
+}
+let numbers=[12,3,3,4,5]
+numbers.getBiggestNumber();
+
+String.prototype.lengthOfString=function(){
+    console.log(this.length);
+}
+
+let text="Salam";
+
+text.lengthOfString()
+
+Number.prototype.PowOfNumber=function(num){
+    console.log(Math.pow(this,num));
+}
+
+let num=5;
+num.PowOfNumber(2)
